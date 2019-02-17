@@ -13,11 +13,16 @@ This Repository describes how to install Tomcat, Maven, Spring, JAVA in MAC to g
   In case of MAC the path setting are bit differnt.
 4. In my case I have to do changes in the ~/.bash_profile file
 5. Below is the content from my ~/.bash_profile 
+  
   #java export
-  export PATH=/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/bin
-  export M2_HOME=/Applications/apache-maven-3.6.0
-  export PATH=$PATH:$M2_HOME/bin
-  export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home
+  
+    export PATH=/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/bin
+  
+    export M2_HOME=/Applications/apache-maven-3.6.0
+  
+    export PATH=$PATH:$M2_HOME/bin
+  
+    export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home
   
 6. Save this file and make sure to excecute "source ~/.bash_profile" 
 7. Close the terminal in which you have executed the ~/.startup.sh command. This is must step. The terminal in which you were executing this command will still be referring to the old java path. Close this terminal and start a new terminal for the changes to get picked up.
